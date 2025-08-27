@@ -1,11 +1,11 @@
 package Patterns;
 
-public class Patttern3 {
+public class Pattern3 {
 
     public static void main(String[] args) {
 
-        Patttern3 patttern3 = new Patttern3();
-        patttern3.printPattern(5);
+        Pattern3 pattern3 = new Pattern3();
+        pattern3.printPattern(5);
     }
 
     public void printPattern(int stars){

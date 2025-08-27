@@ -1,16 +1,16 @@
 package Patterns;
 
-public class Patttern4 {
+public class Pattern2 {
 
     public static void main(String[] args) {
 
-        Patttern4 pattern = new Patttern4();
-        pattern.printPattern(5);
+        Pattern2 pattern2 = new Pattern2();
+        pattern2.printPattern(5);
     }
 
     public void printPattern(int stars){
         for(int i = 0 ; i < stars ; i++){
-            for(int j = stars ; j > i ; j--){
+            for(int j = 0 ; j <= i ; j++){
                 System.out.print("*");
             }
             System.out.println();
