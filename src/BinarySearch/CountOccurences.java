@@ -1,20 +1,15 @@
 package BinarySearch;
 
-public class FirstLastOccurrence {
+public class CountOccurences {
 
     public static void main(String[] args) {
 
         int[] arr = {5,7,7,8,8,10};
 
-        FirstLastOccurrence firstLastOccurrence = new FirstLastOccurrence();
-        int[] ans = firstLastOccurrence.searchRange(arr,11);
-
-        for(Integer i:ans){
-            System.out.println(i);
-        }
+        System.out.println(count(arr,6,8));
     }
 
-    public int[] searchRange(int[] nums, int target) {
+    public static int count(int nums[], int n, int target) {
 
         int low = 0;
         int high = nums.length - 1;
@@ -52,6 +47,10 @@ public class FirstLastOccurrence {
             }
         }
 
-        return new int[]{first, last};
+        if(last == -1){
+            return 0;
+        }
+
+        return (last-first)+1;
     }
 }
